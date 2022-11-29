@@ -1,10 +1,6 @@
 package com.eng.Universita;
 
-import com.eng.Universita.Studente.StudenteIscritto;
-
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.beans.factory.support.BeanDefinitionRegistryPostProcessor;
-import org.springframework.boot.context.properties.bind.PropertySourcesPlaceholdersResolver;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -12,8 +8,8 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 
 @Configuration
-@ComponentScan(basePackages = {"com.eng.Universita.*"})
-@PropertySource(value = "classpath:/com/eng/Universita/uni.properties")
+//@ComponentScan(basePackages = {"com.eng.Universita.*"})
+@PropertySource("classpath:application.properties")
 public class UniversitaConfiguration {
 
 

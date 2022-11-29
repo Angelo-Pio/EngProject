@@ -1,11 +1,10 @@
 package com.eng.Universita.Studente;
 
-import com.eng.Universita.Corso;
-import com.eng.Universita.Facolta;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import javax.persistence.Entity;
+import com.eng.Universita.Corso;
+import com.eng.Universita.Facolta;
 
 @Component
 public class StudenteIscritto extends Studente{
